@@ -1,20 +1,113 @@
 import React from 'react';
-import Head from 'next/head';
+import {
+  FiFacebook,
+  FiInstagram,
+  FiLinkedin,
+  FiGithub,
+  FiMail,
+} from 'react-icons/fi';
 
-import CarroLogo from '../assets/carro.svg';
-import { Container } from '../styles/pages/Home';
+import {
+  Container,
+  Profile,
+  Project,
+  Projects,
+  SocialMedias,
+  SocialMedia,
+  ProjectTitle,
+  ProjectDescription,
+  ProjectDetails,
+  ProjectTechs,
+} from '../styles/pages/Home';
 
-const Home: React.FC = () => (
+import GoBarber from '../assets/projects/gobarber.svg';
+import NodeJSImage from '../assets/techs/node.svg';
+import ReactImage from '../assets/techs/react.svg';
+import ProfileImage from '../assets/profile.svg';
+
+const App: React.FC = () => (
   <Container>
-    <Head>
-      <title>Home Page</title>
-    </Head>
+    <Profile>
+      <ProfileImage />
+    </Profile>
 
-    <main>
-      <CarroLogo />
-      <h1>Hello World</h1>
-    </main>
+    <SocialMedias>
+      <SocialMedia
+        href="https://facebook.com/hiro.yamaguchi.923/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FiFacebook size={24} />
+      </SocialMedia>
+
+      <SocialMedia
+        href="https://instagram.com/hiroyamaguch/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FiInstagram size={24} />
+      </SocialMedia>
+
+      <SocialMedia
+        href="https://linkedin.com/in/hiroyamaguch/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FiLinkedin size={24} />
+      </SocialMedia>
+
+      <SocialMedia
+        href="https://github.com/hiroyamaguch"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FiGithub size={24} />
+      </SocialMedia>
+
+      <SocialMedia
+        href="mailto:hiroyuki_yamaguchi@hotmai.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FiMail size={24} />
+      </SocialMedia>
+    </SocialMedias>
+
+    <Projects>
+      <Project>
+        <a
+          href="https://github.com/hiroyamaguch/gostack-gobarber"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GoBarber />
+        </a>
+
+        <ProjectDetails>
+          <ProjectTitle
+            href="https://github.com/hiroyamaguch/gostack-gobarber"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rocketseat GoBarber
+          </ProjectTitle>
+
+          <ProjectDescription>
+            Site e aplicativo mobile para agendamento de horários em
+            cabeleireiros. Este projeto foi desenvolvido durante o Bootcamp
+            GoStack da Rocketseat.
+          </ProjectDescription>
+
+          <ProjectTechs>
+            <>
+              <NodeJSImage />
+            </>
+            <ReactImage />
+          </ProjectTechs>
+        </ProjectDetails>
+      </Project>
+    </Projects>
   </Container>
 );
 
-export default Home;
+export default App;
