@@ -6,9 +6,6 @@ import {
   FiGithub,
   FiMail,
 } from 'react-icons/fi';
-
-import Head from 'next/head';
-
 import {
   Container,
   Profile,
@@ -29,12 +26,6 @@ import ProfileImage from '../../public/assets/profile.svg';
 
 const App: React.FC = () => (
   <>
-    <Head>
-      <title>Pedro Yamaguchi</title>
-      <meta property="og:title" content="Pedro Yamaguchi" key="title" />
-      <meta name="description" content="Portfólio de Pedro Yamaguchi" />
-      <link rel="icon" href="/assets/profile.svg" />
-    </Head>
     <Container>
       <Profile>
         <ProfileImage />
