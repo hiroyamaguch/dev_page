@@ -12,7 +12,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
       <title>Pedro Yamaguchi</title>
       <meta property="og:title" content="Pedro Yamaguchi" key="title" />
       <meta name="description" content="Portfólio de Pedro Yamaguchi" />
-      <link rel="icon" href="/assets/profile.svg" />
+      <link rel="icon" href="/assets/favicon.svg" />
     </Head>
 
     <Component {...pageProps} />

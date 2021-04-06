@@ -9,18 +9,13 @@ import {
 import {
   Profile,
   ProfileDetails,
-  Project,
-  Portfolio,
   SocialMedias,
-  ProjectTitle,
-  ProjectDescription,
+  Portfolio,
+  Project,
   ProjectDetails,
-  ProjectTechs,
 } from '../styles/pages/Home';
 
-import GoBarber from '../../public/assets/projects/gobarber.svg';
-import NodeJSImage from '../../public/assets/techs/node.svg';
-import ReactImage from '../../public/assets/techs/react.svg';
+import JlrConstrutora from '../../public/assets/projects/jlr_construtora.svg';
 import ProfileImage from '../../public/assets/profile.svg';
 
 const App: React.FC = () => (
@@ -83,38 +78,26 @@ const App: React.FC = () => (
     <Portfolio>
       <h2>Portfólio</h2>
 
-      <Project>
-        <a
-          href="https://github.com/hiroyamaguch/gostack-gobarber"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GoBarber />
-        </a>
-
-        <ProjectDetails>
-          <ProjectTitle
-            href="https://github.com/hiroyamaguch/gostack-gobarber"
+      <div>
+        <Project>
+          <a
+            href="https://jlr2construtora.com.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Rocketseat GoBarber
-          </ProjectTitle>
+            <JlrConstrutora />
+          </a>
 
-          <ProjectDescription>
-            Site e aplicativo mobile para agendamento de horários em
-            cabeleireiros. Este projeto foi desenvolvido durante o Bootcamp
-            GoStack da Rocketseat.
-          </ProjectDescription>
+          <ProjectDetails>
+            <h3>JLR Construtora</h3>
 
-          <ProjectTechs>
-            <>
-              <NodeJSImage />
-            </>
-            <ReactImage />
-          </ProjectTechs>
-        </ProjectDetails>
-      </Project>
+            <p>
+              Aplicação Web desenvolvida para empresa JLR Construtora. Link da
+              aplicação.
+            </p>
+          </ProjectDetails>
+        </Project>
+      </div>
     </Portfolio>
   </>
 );

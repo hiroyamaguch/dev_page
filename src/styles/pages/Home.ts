@@ -11,8 +11,8 @@ export const Profile = styled.div`
   margin: 40px auto 0 auto;
 
   > svg {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
   }
 
   @media only screen and (min-width: 1250px) {
@@ -59,6 +59,10 @@ export const SocialMedias = styled.div`
   display: flex;
   margin-top: 24px;
 
+  @media only screen and (max-width: 1250px) {
+    margin-bottom: 24px;
+  }
+
   a + a {
     margin-left: 40px;
   }
@@ -79,73 +83,37 @@ export const Portfolio = styled.div`
   flex-direction: column;
   align-items: center;
 
-  background-color: #e1e1e6;
+  background-color: #f3f3f3;
 
   padding: 16px 5%;
-`;
 
-export const Project = styled.div`
-  margin: 24px;
-  background-color: #f3f3f3;
-  border-radius: 8px;
-
-  display: flex;
-
-  svg {
-    width: 100%;
-    height: 100%;
-
-    margin-left: 2px;
-    border-radius: 8px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    padding: 12px;
-
-    flex-direction: column;
+  > div {
+    display: flex;
     align-items: center;
   }
 `;
 
+export const Project = styled.div`
+  background-color: #fff;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  padding: 16px;
+
+  text-align: center;
+
+  svg {
+    width: 360px;
+    height: 200px;
+  }
+`;
+
 export const ProjectDetails = styled.div`
-  margin-left: 32px;
   margin-top: 16px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-`;
-
-export const ProjectTitle = styled.a`
-  font-size: 20px;
-  text-decoration: none;
-  color: #8a05be;
-  margin-bottom: 8px;
-
-  :hover {
-    transform: opacity 0.4s;
-    opacity: 0.7;
-  }
-`;
-
-export const ProjectDescription = styled.p`
-  font-size: 16px;
-
-  color: #414141;
-
-  @media only screen and (max-width: 768px) {
-    margin: auto;
-  }
-`;
-
-export const ProjectTechs = styled.div`
-  display: flex;
-  justify-content: center;
-
-  margin-top: 16px;
-
-  svg {
-    width: 72px;
-    height: 72px;
-  }
 `;
