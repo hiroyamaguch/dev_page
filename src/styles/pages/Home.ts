@@ -2,12 +2,10 @@ import styled from 'styled-components';
 
 export const Profile = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 
   width: 90%;
-
   margin: 16px auto 0 auto;
 
   > svg {
@@ -33,7 +31,6 @@ export const ProfileDetails = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
-
   text-align: center;
 
   > h1 {
@@ -42,8 +39,6 @@ export const ProfileDetails = styled.div`
 
   @media only screen and (min-width: 865px) {
     align-items: baseline;
-    margin: 0;
-
     text-align: left;
 
     > h1 {
@@ -58,30 +53,18 @@ export const SocialMedias = styled.div`
   display: flex;
   margin-top: 24px;
 
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 865px) {
     margin-bottom: 24px;
   }
 
   a + a {
     margin-left: 40px;
   }
-
-  a {
-    text-decoration: none;
-    color: ${props => props.theme.colors.light.text};
-
-    :hover {
-      transform: color 0.4s;
-      color: #8a05be;
-    }
-  }
 `;
 
 export const Portfolio = styled.div`
   text-align: center;
-
   background-color: #f3f3f3;
-
   padding: 16px 5%;
 
   > h2 {
@@ -91,7 +74,6 @@ export const Portfolio = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     div + div {
@@ -103,6 +85,7 @@ export const Portfolio = styled.div`
   @media only screen and (min-width: 865px) {
     > div {
       flex-direction: row;
+      justify-content: center;
 
       div + div {
         margin-left: 16px;
@@ -118,20 +101,18 @@ export const Project = styled.div`
 
   display: flex;
   flex-direction: column;
-
-  width: 400px;
-  padding: 16px;
-
   text-align: center;
 
+  max-width: 400px;
+  padding: 16px;
+
   > svg {
-    width: 100%;
     height: 200px;
   }
 `;
 
 export const ProjectDetails = styled.div`
-  padding-top: 16px;
+  padding-top: 8px;
 
   display: flex;
   flex-direction: column;
@@ -139,5 +120,9 @@ export const ProjectDetails = styled.div`
   h3,
   p {
     margin-bottom: 8px;
+  }
+
+  p {
+    color: #5f5f5f;
   }
 `;

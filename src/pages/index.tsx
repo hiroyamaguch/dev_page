@@ -17,7 +17,6 @@ import {
 } from '../styles/pages/Home';
 
 import ProfileImage from '../../public/assets/profile.svg';
-import JlrConstrutora from '../../public/assets/projects/construtora.svg';
 
 const App: React.FC = () => (
   <>
@@ -83,7 +82,7 @@ const App: React.FC = () => (
           <Image
             src="/assets/projects/construtora.svg"
             alt="Jlr Construtora"
-            width={350}
+            width={360}
             height={200}
           />
 

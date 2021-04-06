@@ -24,4 +24,14 @@ export default createGlobalStyle`
   h3 {
     font: 400 20px Poppins, sans-serif;
   }
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.light.text};
+
+    :hover {
+      transform: color 0.4s;
+      color: #8a05be;
+    }
+  }
 `;
