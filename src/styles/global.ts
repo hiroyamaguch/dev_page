@@ -23,6 +23,5 @@ export default createGlobalStyle`
 
   h3 {
     font: 400 20px Poppins, sans-serif;
-    color: #8a05be;
   }
 `;

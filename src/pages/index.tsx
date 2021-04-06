@@ -6,6 +6,7 @@ import {
   FiGithub,
   FiMail,
 } from 'react-icons/fi';
+import Image from 'next/image';
 import {
   Profile,
   ProfileDetails,
@@ -15,8 +16,8 @@ import {
   ProjectDetails,
 } from '../styles/pages/Home';
 
-import JlrConstrutora from '../../public/assets/projects/construtora.svg';
 import ProfileImage from '../../public/assets/profile.svg';
+import JlrConstrutora from '../../public/assets/projects/construtora.svg';
 
 const App: React.FC = () => (
   <>
@@ -73,21 +74,25 @@ const App: React.FC = () => (
         </SocialMedias>
       </ProfileDetails>
     </Profile>
+
     <Portfolio>
       <h2>Portfólio</h2>
 
       <div>
         <Project>
-          <JlrConstrutora />
+          <Image
+            src="/assets/projects/construtora.svg"
+            alt="Jlr Construtora"
+            width={350}
+            height={200}
+          />
 
           <ProjectDetails>
             <h3>JLR Construtora</h3>
-
             <p>
               Aplicação Web desenvolvida para empresa JLR Construtora utilizando
               a ferramenta WordPress
             </p>
-
             <a
               href="https://jlr2construtora.com.br/"
               target="_blank"

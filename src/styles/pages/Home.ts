@@ -21,6 +21,8 @@ export const Profile = styled.div`
     > svg {
       width: 800px;
       height: 100%;
+
+      min-width: 300px;
       max-width: 400px;
     }
   }
@@ -88,7 +90,25 @@ export const Portfolio = styled.div`
 
   > div {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    div + div {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 865px) {
+    > div {
+      flex-direction: row;
+
+      div + div {
+        margin-left: 16px;
+        margin-top: 0;
+      }
+    }
   }
 `;
 
@@ -111,7 +131,7 @@ export const Project = styled.div`
 `;
 
 export const ProjectDetails = styled.div`
-  margin-top: 16px;
+  padding-top: 16px;
 
   display: flex;
   flex-direction: column;
