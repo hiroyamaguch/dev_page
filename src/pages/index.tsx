@@ -15,7 +15,7 @@ import {
   ProjectDetails,
 } from '../styles/pages/Home';
 
-import JlrConstrutora from '../../public/assets/projects/jlr_construtora.svg';
+import JlrConstrutora from '../../public/assets/projects/construtora.svg';
 import ProfileImage from '../../public/assets/profile.svg';
 
 const App: React.FC = () => (
@@ -26,9 +26,8 @@ const App: React.FC = () => (
       <ProfileDetails>
         <h1>Pedro Yamaguchi</h1>
         <p>
-          Engenheiro da Computação || Desenvolvedor Full Stack || Trabalhei com
-          as ferramentas ReactJs, Node.js, React Native, WordPress, Spring e
-          NextJS
+          Engenheiro da Computação e Desenvolvedor Full Stack com conhecimentos
+          em ReactJs, Node.js, React Native, WordPress, Spring, Expo e NextJS
         </p>
 
         <SocialMedias>
@@ -74,27 +73,28 @@ const App: React.FC = () => (
         </SocialMedias>
       </ProfileDetails>
     </Profile>
-
     <Portfolio>
       <h2>Portfólio</h2>
 
       <div>
         <Project>
-          <a
-            href="https://jlr2construtora.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <JlrConstrutora />
-          </a>
+          <JlrConstrutora />
 
           <ProjectDetails>
             <h3>JLR Construtora</h3>
 
             <p>
-              Aplicação Web desenvolvida para empresa JLR Construtora. Link da
-              aplicação.
+              Aplicação Web desenvolvida para empresa JLR Construtora utilizando
+              a ferramenta WordPress
             </p>
+
+            <a
+              href="https://jlr2construtora.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Saiba Mais
+            </a>
           </ProjectDetails>
         </Project>
       </div>

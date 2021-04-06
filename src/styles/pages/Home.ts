@@ -6,24 +6,22 @@ export const Profile = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: 80%;
+  width: 90%;
 
-  margin: 40px auto 0 auto;
+  margin: 16px auto 0 auto;
 
   > svg {
     width: 30%;
     height: 30%;
   }
 
-  @media only screen and (min-width: 1250px) {
+  @media only screen and (min-width: 865px) {
     flex-direction: row;
-
-    height: 400px;
-    width: 80%;
 
     > svg {
       width: 800px;
-      height: 400px;
+      height: 100%;
+      max-width: 400px;
     }
   }
 `;
@@ -36,18 +34,17 @@ export const ProfileDetails = styled.div`
 
   text-align: center;
 
-  h1 {
+  > h1 {
     font-size: 36px;
-    margin-bottom: 24px;
   }
 
-  @media only screen and (min-width: 1250px) {
+  @media only screen and (min-width: 865px) {
     align-items: baseline;
     margin: 0;
 
     text-align: left;
 
-    h1 {
+    > h1 {
       font-size: 48px;
       max-width: 144px;
       margin-bottom: 24px;
@@ -79,13 +76,15 @@ export const SocialMedias = styled.div`
 `;
 
 export const Portfolio = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 
   background-color: #f3f3f3;
 
   padding: 16px 5%;
+
+  > h2 {
+    margin-bottom: 16px;
+  }
 
   > div {
     display: flex;
@@ -105,8 +104,8 @@ export const Project = styled.div`
 
   text-align: center;
 
-  svg {
-    width: 360px;
+  > svg {
+    width: 100%;
     height: 200px;
   }
 `;
@@ -116,4 +115,9 @@ export const ProjectDetails = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  h3,
+  p {
+    margin-bottom: 8px;
+  }
 `;
