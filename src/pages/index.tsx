@@ -7,12 +7,11 @@ import {
   FiMail,
 } from 'react-icons/fi';
 import {
-  Container,
   Profile,
+  ProfileDetails,
   Project,
-  Projects,
+  Portfolio,
   SocialMedias,
-  SocialMedia,
   ProjectTitle,
   ProjectDescription,
   ProjectDetails,
@@ -26,88 +25,97 @@ import ProfileImage from '../../public/assets/profile.svg';
 
 const App: React.FC = () => (
   <>
-    <Container>
-      <Profile>
-        <ProfileImage />
-      </Profile>
+    <Profile>
+      <ProfileImage />
 
-      <SocialMedias>
-        <SocialMedia
-          href="https://facebook.com/hiro.yamaguchi.923/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiFacebook size={24} />
-        </SocialMedia>
+      <ProfileDetails>
+        <h1>Pedro Yamaguchi</h1>
+        <p>
+          Engenheiro da Computação || Desenvolvedor Full Stack || Trabalhei com
+          as ferramentas ReactJs, Node.js, React Native, WordPress, Spring e
+          NextJS
+        </p>
 
-        <SocialMedia
-          href="https://instagram.com/hiroyamaguch/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiInstagram size={24} />
-        </SocialMedia>
-
-        <SocialMedia
-          href="https://linkedin.com/in/hiroyamaguch/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiLinkedin size={24} />
-        </SocialMedia>
-
-        <SocialMedia
-          href="https://github.com/hiroyamaguch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiGithub size={24} />
-        </SocialMedia>
-
-        <SocialMedia
-          href="mailto:hiroyuki_yamaguchi@hotmai.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FiMail size={24} />
-        </SocialMedia>
-      </SocialMedias>
-
-      <Projects>
-        <Project>
+        <SocialMedias>
           <a
+            href="https://facebook.com/hiro.yamaguchi.923/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiFacebook size={24} />
+          </a>
+
+          <a
+            href="https://instagram.com/hiroyamaguch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiInstagram size={24} />
+          </a>
+
+          <a
+            href="https://linkedin.com/in/hiroyamaguch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiLinkedin size={24} />
+          </a>
+
+          <a
+            href="https://github.com/hiroyamaguch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiGithub size={24} />
+          </a>
+
+          <a
+            href="mailto:hiroyuki_yamaguchi@hotmai.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiMail size={24} />
+          </a>
+        </SocialMedias>
+      </ProfileDetails>
+    </Profile>
+
+    <Portfolio>
+      <h2>Portfólio</h2>
+
+      <Project>
+        <a
+          href="https://github.com/hiroyamaguch/gostack-gobarber"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GoBarber />
+        </a>
+
+        <ProjectDetails>
+          <ProjectTitle
             href="https://github.com/hiroyamaguch/gostack-gobarber"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GoBarber />
-          </a>
+            Rocketseat GoBarber
+          </ProjectTitle>
 
-          <ProjectDetails>
-            <ProjectTitle
-              href="https://github.com/hiroyamaguch/gostack-gobarber"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Rocketseat GoBarber
-            </ProjectTitle>
+          <ProjectDescription>
+            Site e aplicativo mobile para agendamento de horários em
+            cabeleireiros. Este projeto foi desenvolvido durante o Bootcamp
+            GoStack da Rocketseat.
+          </ProjectDescription>
 
-            <ProjectDescription>
-              Site e aplicativo mobile para agendamento de horários em
-              cabeleireiros. Este projeto foi desenvolvido durante o Bootcamp
-              GoStack da Rocketseat.
-            </ProjectDescription>
-
-            <ProjectTechs>
-              <>
-                <NodeJSImage />
-              </>
-              <ReactImage />
-            </ProjectTechs>
-          </ProjectDetails>
-        </Project>
-      </Projects>
-    </Container>
+          <ProjectTechs>
+            <>
+              <NodeJSImage />
+            </>
+            <ReactImage />
+          </ProjectTechs>
+        </ProjectDetails>
+      </Project>
+    </Portfolio>
   </>
 );
 

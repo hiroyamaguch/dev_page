@@ -49,8 +49,8 @@ export default class MyDocument extends Document {
           />
 
           <link
-            rel="icon"
-            href="https://quatrorodas.abril.com.br/noticias/os-50-carros-mais-vendidos-no-brasil-em-2018/"
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           />
         </Head>
         <body>
