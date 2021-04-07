@@ -18,11 +18,11 @@ export default createGlobalStyle`
   }
 
   h2 {
-    font: 500 36px Poppins, sans-serif;
+    font: 400 36px Poppins, sans-serif;
   }
 
   h3 {
-    font: 400 20px Poppins, sans-serif;
+    font: 400 24px Poppins, sans-serif;
   }
 
   a {

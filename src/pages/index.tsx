@@ -16,12 +16,15 @@ import {
   ProjectDetails,
 } from '../styles/pages/Home';
 
-import ProfileImage from '../../public/assets/profile.svg';
-
 const App: React.FC = () => (
   <>
     <Profile>
-      <ProfileImage />
+      <Image
+        src="/assets/profile.svg"
+        alt="Pedro Yamaguchi"
+        width={376}
+        height={376}
+      />
 
       <ProfileDetails>
         <h1>Pedro Yamaguchi</h1>
@@ -82,7 +85,7 @@ const App: React.FC = () => (
           <Image
             src="/assets/projects/construtora.svg"
             alt="Jlr Construtora"
-            width={360}
+            width={300}
             height={200}
           />
 

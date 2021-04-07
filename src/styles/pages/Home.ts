@@ -2,60 +2,54 @@ import styled from 'styled-components';
 
 export const Profile = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 
-  width: 90%;
+  max-width: 1120px;
+  padding-right: 16px;
   margin: 16px auto 0 auto;
 
-  > svg {
-    width: 30%;
-    height: 30%;
-  }
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    padding-bottom: 16px;
+    padding-right: 0;
 
-  @media only screen and (min-width: 865px) {
-    flex-direction: row;
+    width: 90%;
 
-    > svg {
-      width: 800px;
-      height: 100%;
-
-      min-width: 300px;
-      max-width: 400px;
+    > div:first-child {
+      width: 188px;
     }
   }
 `;
 
 export const ProfileDetails = styled.div`
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
+  text-align: left;
   margin: auto;
-  text-align: center;
 
   > h1 {
-    font-size: 36px;
+    font-size: 48px;
+    max-width: 300px;
+    margin-bottom: 16px;
   }
 
-  @media only screen and (min-width: 865px) {
-    align-items: baseline;
-    text-align: left;
+  @media only screen and (max-width: 700px) {
+    align-items: center;
+    text-align: center;
 
     > h1 {
-      font-size: 48px;
-      max-width: 144px;
-      margin-bottom: 24px;
+      font-size: 36px;
+      max-width: 100%;
     }
   }
 `;
 
 export const SocialMedias = styled.div`
   display: flex;
-  margin-top: 24px;
-
-  @media only screen and (max-width: 865px) {
-    margin-bottom: 24px;
-  }
+  margin-top: 16px;
 
   a + a {
     margin-left: 40px;
@@ -65,7 +59,7 @@ export const SocialMedias = styled.div`
 export const Portfolio = styled.div`
   text-align: center;
   background-color: #f3f3f3;
-  padding: 16px 5%;
+  padding: 16px;
 
   > h2 {
     margin-bottom: 16px;
@@ -73,23 +67,23 @@ export const Portfolio = styled.div`
 
   > div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 
     div + div {
-      margin-left: 0;
-      margin-top: 16px;
+      margin-left: 16px;
+      margin-top: 0;
     }
   }
 
-  @media only screen and (min-width: 865px) {
+  @media only screen and (max-width: 700px) {
     > div {
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
       div + div {
-        margin-left: 16px;
-        margin-top: 0;
+        margin-left: 0;
+        margin-top: 16px;
       }
     }
   }
@@ -105,10 +99,6 @@ export const Project = styled.div`
 
   max-width: 400px;
   padding: 16px;
-
-  > svg {
-    height: 200px;
-  }
 `;
 
 export const ProjectDetails = styled.div`
