@@ -53,6 +53,7 @@ const Li: React.FC<InputProps> = ({
               alt={tech.name}
               width={40}
               height={40}
+              key={tech.name}
             />
           ))}
         </div>
