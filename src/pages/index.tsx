@@ -12,8 +12,9 @@ import {
   ProfileDetails,
   SocialMedias,
   Portfolio,
-  Project,
-  ProjectDetails,
+  Projects,
+  Content,
+  Content2,
 } from '../styles/pages/Home';
 
 const App: React.FC = () => (
@@ -77,35 +78,52 @@ const App: React.FC = () => (
       </ProfileDetails>
     </Profile>
 
-    <Portfolio>
-      <h2>Portfólio</h2>
+    <div style={{ backgroundColor: '#eec643' }}>
+      <Portfolio>
+        <h2>Portfólio</h2>
 
-      <div>
-        <Project>
-          <Image
-            src="/assets/projects/construtora.svg"
-            alt="Jlr Construtora"
-            width={300}
-            height={200}
-          />
+        <Projects>
+          <li>
+            <Content>
+              <Image
+                src="/assets/projects/construtora.svg"
+                alt="JLR2 Construtora"
+                width={64}
+                height={64}
+              />
 
-          <ProjectDetails>
-            <h3>JLR Construtora</h3>
+              <p>Fevereiro de 2021</p>
+            </Content>
+
+            <h3>JLR2 Construtora</h3>
+
             <p>
               Aplicação Web desenvolvida para empresa JLR Construtora utilizando
               a ferramenta WordPress
             </p>
-            <a
-              href="https://jlr2construtora.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Saiba Mais
-            </a>
-          </ProjectDetails>
-        </Project>
-      </div>
-    </Portfolio>
+
+            <Content2>
+              <div>
+                <Image
+                  src="/assets/techs/wordpress.svg"
+                  alt="WordPress"
+                  width={40}
+                  height={40}
+                />
+              </div>
+
+              <a
+                href="https://jlr2construtora.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver aplicação
+              </a>
+            </Content2>
+          </li>
+        </Projects>
+      </Portfolio>
+    </div>
   </>
 );
 

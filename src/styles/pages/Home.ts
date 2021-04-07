@@ -57,62 +57,76 @@ export const SocialMedias = styled.div`
 `;
 
 export const Portfolio = styled.div`
-  text-align: center;
-  background-color: #f3f3f3;
-  padding: 16px;
+  max-width: 1120px;
+  padding: 16px 0;
+  margin: auto;
 
-  > h2 {
-    margin-bottom: 16px;
+  @media only screen and (max-width: 700px) {
+    padding: 16px 5%;
+  }
+`;
+
+export const Projects = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+
+  > li {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px;
+    background-color: #fff;
+
+    padding: 16px 24px;
+    margin-top: 16px;
+    width: 352px;
+    height: 352px;
+
+    h3 {
+      margin-bottom: 8px;
+    }
   }
 
-  > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  > li + li {
+    margin-left: 32px;
+  }
 
-    div + div {
-      margin-left: 16px;
-      margin-top: 0;
-    }
+  > li:nth-child(4n) {
+    margin-left: 0;
   }
 
   @media only screen and (max-width: 700px) {
-    > div {
-      flex-direction: column;
-      align-items: center;
-
-      div + div {
-        margin-left: 0;
-        margin-top: 16px;
-      }
+    > li + li {
+      margin-left: 0;
     }
   }
 `;
 
-export const Project = styled.div`
-  background-color: #fff;
-  border-radius: 8px;
-
+export const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
 
-  max-width: 400px;
-  padding: 16px;
+  p {
+    color: #808080;
+  }
 `;
 
-export const ProjectDetails = styled.div`
-  padding-top: 8px;
-
+export const Content2 = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
 
-  h3,
-  p {
-    margin-bottom: 8px;
-  }
+  margin-left: -24px;
 
-  p {
-    color: #5f5f5f;
+  > div {
+    background-color: #eec643;
+
+    height: 50px;
+
+    padding: 5px 5px 5px 24px;
+    border-radius: 0 25px 25px 0;
   }
 `;
