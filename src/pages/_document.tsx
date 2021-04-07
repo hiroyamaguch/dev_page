@@ -41,7 +41,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <meta property="og:title" content="Pedro Yamaguchi" key="title" />
+          <meta name="description" content="Portfólio de Pedro Yamaguchi" />
           <meta charSet="utf-8" />
+          <link rel="icon" href="/assets/favicon.svg" />
 
           <link
             rel="stylesheet"

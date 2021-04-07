@@ -13,9 +13,8 @@ import {
   SocialMedias,
   Portfolio,
   Projects,
-  Content,
-  Content2,
 } from '../styles/pages/Home';
+import Li from '../components/Li';
 
 const App: React.FC = () => (
   <>
@@ -83,44 +82,15 @@ const App: React.FC = () => (
         <h2>Portfólio</h2>
 
         <Projects>
-          <li>
-            <Content>
-              <Image
-                src="/assets/projects/construtora.svg"
-                alt="JLR2 Construtora"
-                width={64}
-                height={64}
-              />
-
-              <p>Fevereiro de 2021</p>
-            </Content>
-
-            <h3>JLR2 Construtora</h3>
-
-            <p>
-              Aplicação Web desenvolvida para empresa JLR Construtora utilizando
-              a ferramenta WordPress
-            </p>
-
-            <Content2>
-              <div>
-                <Image
-                  src="/assets/techs/wordpress.svg"
-                  alt="WordPress"
-                  width={40}
-                  height={40}
-                />
-              </div>
-
-              <a
-                href="https://jlr2construtora.com.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver aplicação
-              </a>
-            </Content2>
-          </li>
+          <Li
+            logoFile="construtora"
+            description="Aplicação Web desenvolvida para empresa JLR Construtora utilizando
+            a ferramenta WordPress"
+            projectDate="Fevereiro de 2021"
+            techs={[{ name: 'WordPress', file: 'wordpress' }]}
+            aplicationURL="https://jlr2construtora.com.br/"
+            companyName="JLR2 Construtora"
+          />
         </Projects>
       </Portfolio>
     </div>
