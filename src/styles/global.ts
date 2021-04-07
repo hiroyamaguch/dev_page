@@ -11,6 +11,12 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.light.background};
     color: ${props => props.theme.colors.light.text};
     font: 400 16px Poppins, sans-serif;
+
+    > div {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   h1 {

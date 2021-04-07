@@ -57,6 +57,7 @@ export const SocialMedias = styled.div`
 `;
 
 export const Portfolio = styled.div`
+  width: 90%;
   max-width: 1120px;
   padding: 16px 0;
   margin: auto;
@@ -95,8 +96,18 @@ export const Projects = styled.ul`
     margin-left: 0;
   }
 
-  @media only screen and (max-width: 700px) {
-    > li + li {
+  @media only screen and (max-width: 1215px) {
+    > li:nth-child(even) {
+      margin-left: 32px;
+    }
+
+    > li:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 790px) {
+    > li:nth-child(1n) {
       margin-left: 0;
     }
   }

@@ -77,7 +77,7 @@ const App: React.FC = () => (
       </ProfileDetails>
     </Profile>
 
-    <div style={{ backgroundColor: '#eec643' }}>
+    <div style={{ backgroundColor: '#eec643', flex: 1 }}>
       <Portfolio>
         <h2>Portfólio</h2>
 
