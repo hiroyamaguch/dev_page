@@ -6,12 +6,13 @@ https://pedroyamaguchi.dev/
 
 Está é uma aplicação web construída para organizar os projetos realizados em forma de portfólio.
 ## Layout web
-![Web 1](https://github.com/hiroyamaguch/assets/tree/master/dev_page/web1.png)
+![Web 1](https://github.com/hiroyamaguch/assets/blob/6872bbc2f64ab9e53b83d9cab3f41753f898c5ce/dev_page/web1.png)
 
 # Tecnologias utilizadas
 - HTML / CSS / JS / TypeScript
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Next.js](https://nextjs.org/)
+
 ## Implantação em produção
 - Front end web: [Plataforma da Vercel](https://vercel.com)
 
