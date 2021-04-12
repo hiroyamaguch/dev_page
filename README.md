@@ -16,7 +16,6 @@ Está é uma aplicação web construída para organizar os projetos realizados e
 - Front end web: [Plataforma da Vercel](https://vercel.com)
 
 # Como executar o projeto
-## Front end web
 Pré-requisitos: npm / yarn
 
 ```bash
