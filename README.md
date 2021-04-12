@@ -6,7 +6,7 @@ https://pedroyamaguchi.dev/
 
 Está é uma aplicação web construída para organizar os projetos realizados em forma de portfólio.
 ## Layout web
-![Web 1](https://github.com/hiroyamaguch/assets/dev_page/web1.png)
+![Web 1](https://github.com/hiroyamaguch/assets/tree/master/dev_page/web1.png)
 
 # Tecnologias utilizadas
 - HTML / CSS / JS / TypeScript
@@ -35,8 +35,8 @@ $ yarn dev
 # ou
 $ npm run dev
 
-# Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado
 ```
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado
 
 # Autor
 
