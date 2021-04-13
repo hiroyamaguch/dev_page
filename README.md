@@ -1,5 +1,5 @@
 # Página de Portfólio
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/hiroyamaguch/dev_next_js_page/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/hiroyamaguch/portfolio/blob/main/LICENSE)
 
 # Sobre o projeto
 https://pedroyamaguchi.dev/
@@ -21,10 +21,10 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # Clone este repositório
-git clone https://github.com/hiroyamaguch/dev_next_js_page.git
+git clone https://github.com/hiroyamaguch/portfolio.git
 
 # Acesse a pasta do projeto no terminal/cmd
-cd dev_next_js_page
+cd portfolio
 
 # Instale as dependências
 $ yarn
