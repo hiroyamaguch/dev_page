@@ -91,6 +91,14 @@ const App: React.FC = () => (
             aplicationURL="https://jlr2construtora.com.br/"
             companyName="JLR2 Construtora"
           />
+          <Li
+            logoFile="devquiz"
+            description="Aplicação Mobile desenvolvida durante a NLW #5 da Rocketseat"
+            projectDate="Maio de 2021"
+            techs={[{ name: 'WordPress', file: 'flutter' }]}
+            aplicationURL="https://github.com/hiroyamaguch/nlw5"
+            companyName="DevQuiz"
+          />
         </Projects>
       </Portfolio>
     </div>
