@@ -95,9 +95,20 @@ const App: React.FC = () => (
             logoFile="devquiz"
             description="Aplicação Mobile desenvolvida durante a NLW #5 da Rocketseat"
             projectDate="Maio de 2021"
-            techs={[{ name: 'WordPress', file: 'flutter' }]}
+            techs={[{ name: 'Flutter', file: 'flutter' }]}
             aplicationURL="https://github.com/hiroyamaguch/nlw5"
             companyName="DevQuiz"
+          />
+          <Li
+            logoFile="be_the_hero"
+            description="Aplicação para ligar instituições não governamentais a pessoas que querem fazer a diferença na sociedade."
+            projectDate="Março de 2020"
+            techs={[
+              { name: 'NodeJS', file: 'nodejs' },
+              { name: 'React', file: 'react' }
+            ]}
+            aplicationURL="https://github.com/hiroyamaguch/BeTheHero"
+            companyName="Be The Hero"
           />
         </Projects>
       </Portfolio>
