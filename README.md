@@ -1,22 +1,41 @@
-# Página de Portfólio
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/hiroyamaguch/portfolio/blob/main/LICENSE)
+<h1 align="center">
+  Portfólio
+</h1>
 
-# Sobre o projeto
-https://pedroyamaguchi.dev/
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hiroyamaguch/portfolio?color=04D361">
 
-Está é uma aplicação web construída para organizar os projetos realizados em forma de portfólio.
-## Layout web
-![Web 1](https://github.com/hiroyamaguch/assets/blob/6872bbc2f64ab9e53b83d9cab3f41753f898c5ce/dev_page/web1.png)
+  <a href="https://pedroyamaguchi.dev/">
+    <img alt="Made by Pedro Yamaguchi" src="https://img.shields.io/badge/made%20by-Pedro%20Yamaguchi-04D361">
+  </a>
+  
+  <a href="./LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-04D361">
+  </a>  
+</p>
 
-# Tecnologias utilizadas
+<p align="center">
+  <a href="#memo-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-como-executar-o-projeto">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://www.figma.com/file/2C2yvw7jsCOGmaNUDftX9n/Be-The-Hero---OmniStack-11?node-id=0%3A1">Projeto no Figma</a>
+</p>
+
+<p align="center">
+  <img alt="Web" src="https://github.com/hiroyamaguch/assets/blob/6872bbc2f64ab9e53b83d9cab3f41753f898c5ce/dev_page/web1.png">
+</p>
+
+## :memo: Sobre o projeto
+Está é uma aplicação web construída para organizar os projetos realizados em forma de portfólio. Ela está disponível neste [link](https://pedroyamaguchi.dev/).
+
+#### Tecnologias utilizadas
 - HTML / CSS / JS / TypeScript
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Next.js](https://nextjs.org/)
 
-## Implantação em produção
+##### Implantação em produção
 - Front end web: [Plataforma da Vercel](https://vercel.com)
 
-# Como executar o projeto
+## :rocket: Como executar o projeto
 Pré-requisitos: npm / yarn
 
 ```bash
@@ -37,10 +56,5 @@ $ yarn dev
 $ npm run dev
 
 ```
+
 Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado
-
-# Autor
-
-Pedro Antônio Hiroyuki Yamaguchi
-
-https://www.linkedin.com/in/hiroyamaguch/
