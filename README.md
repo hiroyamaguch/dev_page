@@ -17,7 +17,7 @@
 <p align="center">
   <a href="#memo-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-como-executar-o-projeto">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://www.figma.com/file/2C2yvw7jsCOGmaNUDftX9n/Be-The-Hero---OmniStack-11?node-id=0%3A1">Projeto no Figma</a>
+  <a href="https://www.figma.com/file/pKv4HdDnafeXNm1h4LYb07/Web?node-id=0%3A1">Projeto no Figma</a>
 </p>
 
 <p align="center">
