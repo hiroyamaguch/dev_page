@@ -82,26 +82,23 @@ const App: React.FC = () => (
         <h2>Portfólio</h2>
 
         <Projects>
-          <Li
-            logoFile="construtora"
-            description="Aplicação Web desenvolvida para empresa JLR Construtora utilizando
-            a ferramenta WordPress"
-            projectDate="Fevereiro de 2021"
-            techs={[{ name: 'WordPress', file: 'wordpress' }]}
-            aplicationURL="https://jlr2construtora.com.br/"
-            companyName="JLR2 Construtora"
-          />
-          <Li
-            logoFile="devquiz"
-            description="Aplicação Mobile desenvolvida durante a NLW #5 da Rocketseat"
-            projectDate="Maio de 2021"
-            techs={[{ name: 'Flutter', file: 'flutter' }]}
-            aplicationURL="https://github.com/hiroyamaguch/nlw5"
-            companyName="DevQuiz"
+        <Li
+            logoFile="gobarber"
+            description="GoBarber é uma aplicação para realizar agendamentos de
+            serviço de cabeleireiro. Essa aplicação foi desenvolvida durante o
+            curso Bootcamp GoStack da Rocketseat."
+            projectDate="Agosto de 2020"
+            techs={[
+              { name: 'NodeJS', file: 'nodejs' },
+              { name: 'React', file: 'react' }
+            ]}
+            aplicationURL="https://github.com/hiroyamaguch/GoBarber"
+            companyName="GoBarber"
           />
           <Li
             logoFile="be_the_hero"
-            description="Aplicação para ligar instituições não governamentais a pessoas que querem fazer a diferença na sociedade."
+            description="Aplicação para ligar instituições não governamentais a
+            pessoas que querem fazer a diferença na sociedade."
             projectDate="Março de 2020"
             techs={[
               { name: 'NodeJS', file: 'nodejs' },
@@ -109,6 +106,23 @@ const App: React.FC = () => (
             ]}
             aplicationURL="https://github.com/hiroyamaguch/BeTheHero"
             companyName="Be The Hero"
+          />
+          <Li
+            logoFile="construtora"
+            description="Aplicação Web desenvolvida para empresa JLR Construtora
+            utilizando a ferramenta WordPress."
+            projectDate="Fevereiro de 2021"
+            techs={[{ name: 'WordPress', file: 'wordpress' }]}
+            aplicationURL="https://jlr2construtora.com.br/"
+            companyName="JLR2 Construtora"
+          />
+          <Li
+            logoFile="devquiz"
+            description="Aplicação Mobile desenvolvida durante a NLW #5 da Rocketseat."
+            projectDate="Maio de 2021"
+            techs={[{ name: 'Flutter', file: 'flutter' }]}
+            aplicationURL="https://github.com/hiroyamaguch/nlw5"
+            companyName="DevQuiz"
           />
         </Projects>
       </Portfolio>
