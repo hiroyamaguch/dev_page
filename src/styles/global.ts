@@ -13,7 +13,6 @@ export default createGlobalStyle`
     font: 400 16px Poppins, sans-serif;
 
     > div {
-      height: 100vh;
       display: flex;
       flex-direction: column;
     }
