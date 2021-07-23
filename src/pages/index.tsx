@@ -106,7 +106,7 @@ const App: React.FC = () => (
             projectDate="Março de 2020"
             techs={[
               { name: 'NodeJS', file: 'nodejs' },
-              { name: 'React', file: 'react' }
+              { name: 'React', file: 'react' },
             ]}
             aplicationURL="https://github.com/hiroyamaguch/BeTheHero"
             companyName="Be The Hero"
@@ -119,7 +119,7 @@ const App: React.FC = () => (
             projectDate="Agosto de 2020"
             techs={[
               { name: 'NodeJS', file: 'nodejs' },
-              { name: 'React', file: 'react' }
+              { name: 'React', file: 'react' },
             ]}
             aplicationURL="https://github.com/hiroyamaguch/GoBarber"
             companyName="GoBarber"
