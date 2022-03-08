@@ -1,4 +1,4 @@
-import React, { LiHTMLAttributes, useRef } from 'react';
+import { LiHTMLAttributes, useRef } from 'react';
 import Image from 'next/image';
 
 import { HeaderContent, FooterContent } from './styles';
@@ -13,19 +13,19 @@ interface InputProps extends LiHTMLAttributes<HTMLLIElement> {
   description: string;
   projectDate: string;
   techs: ITech[];
-  aplicationURL: string;
+  applicationURL: string;
   companyName: string;
 }
 
-const Li: React.FC<InputProps> = ({
+export function Li({
   logoFile,
   description = '',
   projectDate,
   techs,
-  aplicationURL,
+  applicationURL,
   companyName,
   ...rest
-}) => {
+}: InputProps) {
   const liRef = useRef<HTMLLIElement>(null);
 
   return (
@@ -58,12 +58,12 @@ const Li: React.FC<InputProps> = ({
           ))}
         </div>
 
-        <a href={aplicationURL} target="_blank" rel="noopener noreferrer">
+        <a href={applicationURL} target="_blank" rel="noopener noreferrer">
           Ver aplicação
         </a>
       </FooterContent>
     </li>
   );
-};
+}
 
 export default Li;

@@ -32,3 +32,13 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Yarn 3
+.yarnrc.yml
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
